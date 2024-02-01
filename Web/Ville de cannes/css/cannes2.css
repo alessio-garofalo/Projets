@@ -1,0 +1,572 @@
+@media only screen and (max-width: 601px) {
+
+  
+    html{ 
+        /* definition de prendre tout la page */
+        margin: 0;
+    }
+    
+    
+    
+    
+    /* Body structure page grid */
+    body{
+        display: grid;
+        justify-items: stretch; /* Definition pour utilizer tous l'espace par column e row */
+        grid-template-columns: repeat(3, auto); /* Column grid page */
+        grid-template-rows: auto; /* Row grid page */
+        grid-template-areas: /* Definition de l'area sur tous la page */
+        "nav header header"
+        "main main main"
+        "footer footer footer";
+        margin: 0; /* A changer pour les autres page*/
+    
+    
+            /* BACKGROUND IMAGE */
+        background-image:url("../img/image-cannes-background.jpg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+            /* DEFINITION LENGHT BODY */
+        width: 100%;
+        height: 100%;
+    
+       
+    }
+    /* body end */
+    
+    
+    
+    /* HEADER */
+    header{
+        grid-area: header; 
+        margin-left: 20%;
+        
+        
+    }
+    .title{
+        
+        padding: 1%;
+    
+    }
+    
+    
+    /* NAV BAR */
+    nav{
+        grid-area: nav;/* Definition area */
+        padding: 5px;
+    }
+    
+    .menuBtn{ /* Button Menu */
+        background-color: aquamarine;
+        color: white;
+        border: none;
+        cursor: pointer;
+       min-width: 20px;
+       max-width: 100px;
+       padding: 20px;
+       font-size: 15px;
+    }
+    
+    .menuBtn:hover{ /* Effect Button Menu */
+        background-color: blue;
+        animation-delay: 3s;
+        animation-duration: 3s;
+        transition: 1s;
+    }
+    
+    .drop-down{ /* Definition menu a cascade  */
+        position: fixed;
+        display: inline-block;
+    }
+    
+    .drop-down-child{ /* Definition Sub Menu */
+        display: none;
+        min-width: 100px;
+    }
+    
+    .drop-down-child a{ /* Text modification */
+        text-align: justify;
+        color: blue;
+        background-color: aquamarine;
+        padding: 15px 15px;
+        text-decoration: none;
+        display: block;
+        transition: all .5s ease;
+    }
+    
+    
+    .drop-down:hover .drop-down-child{ /* effect menu cascade "Hover" */
+        display: block; 
+        color: blue;
+        background-color: aquamarine;
+        transform: translateY(0);
+    }
+    .drop-down-child a:hover{ /* Effect sub menu Hover */
+        color: aquamarine;
+        background-color: blue;
+        animation-delay: 3s;
+        animation-duration: 3s;
+        transition: 1s;
+    
+        opacity: 1;
+        transform: translateY(0);
+    }
+    /* END NAV */
+    
+    
+    
+    
+    
+    /* MAIN */
+    main{
+        grid-area: main;
+        margin: 0;
+    }
+    
+    .Hcontainer{
+        color: white;
+        
+        background-color: rgba(245, 245, 245, 0.453);
+        border-radius: 2px;
+        margin: 1% 1%;
+        padding: 5%;
+       
+        text-align: center;
+    }
+    
+    .Container1 h1{
+        
+        font-size: 30px;
+        text-shadow: -2px 0 #0600aa83, 0 2px #0600aa7d, 2px 0 #ffffff, 0 -2px #ffffff;
+        background-color: rgba(255, 255, 255, 0.474);
+        text-align: center;
+        margin: 0;
+    }
+    
+    .Hcontainer h3{
+        padding: 5%;
+        font-size: 30px;
+        color: rgb(0, 0, 139);
+    }
+    .Hcontainer p{
+        text-align: justify;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        
+        text-shadow: -1px 0 rgb(33, 33, 255), 0 1px rgb(33, 33, 255), 1px 0 rgb(33, 33, 255), 0 -1px rgb(33, 33, 255);
+    }
+    
+    .Hcontainer img{
+        max-width: 100%;
+    
+    }
+    /* END MAIN */
+    
+    
+    /* FOOTER */
+    
+    .Fgrid{
+        grid-area: footer;
+        /* Grid pour le footer */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.342);
+    }
+    
+    .Fblason{       /* 1 COLUMN AVEC BLASON CANNES */
+        grid-column: 1;
+        background-image: url("../img/logo-cannes-footer.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        background-size: 15px;
+    }
+    
+    .Fcontact{      /* 2 COLUMN AVEC CONTACT CANNES */
+     grid-column: 2;
+     grid-row-start: 1;
+     grid-row-end: 2;
+        background-color: none;
+        color: rgb(1, 1, 171);
+        
+        
+       
+    }
+    
+    .Fsocial{ /* 3 COLUMN AVEC SOCIAL CANNES */
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        color: rgb(1, 1, 171);
+    }
+    
+    .Flink{
+        text-decoration: none;
+    }
+    .Flink img{
+        display: table-column;
+        max-width: 100px;
+        
+    }
+    
+}
+/* END MAIN */
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 601px) { 
+html{ 
+    /* definition de prendre tout la page */
+    margin: 0;
+}
+
+
+
+
+/* Body structure page grid */
+body{
+    display: grid;
+    justify-items: stretch; /* Definition pour utilizer tous l'espace par column e row */
+    grid-template-columns: repeat(5, auto); /* Column grid page */
+    grid-template-rows: auto; /* Row grid page */
+    grid-template-areas: /* Definition de l'area sur tous la page */
+    "nav .  .   .   ."
+    "header header header header header"
+    "main main main main main"
+    "footer footer footer footer footer";
+    margin: 0; /* A changer pour les autres page*/
+
+
+        /* BACKGROUND IMAGE */
+    background-image:url("../imgs/rando.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+        /* DEFINITION LENGHT BODY */
+    width: 100%;
+    height: 100%;
+
+   
+}
+/* body end */
+
+
+
+/* HEADER */
+header{
+    grid-area: header;
+
+    display: flex;
+    justify-content: center;
+}
+.title{
+    
+    padding: 5%;
+
+}
+
+
+/* NAV BAR */
+nav{
+    grid-area: nav;/* Definition area */
+    padding: 20px;
+}
+
+.menuBtn{ /* Button Menu */
+    background-color: aquamarine;
+    color: white;
+    border: none;
+    cursor: pointer;
+   min-width: 80px;
+   max-width: 200px;
+   padding: 20px;
+   font-size: 30px;
+}
+
+.menuBtn:hover{ /* Effect Button Menu */
+    background-color: blue;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    transition: 1s;
+}
+
+.drop-down{ /* Definition menu a cascade  */
+    position: fixed;
+    display: inline-block;
+}
+
+.drop-down-child{ /* Definition Sub Menu */
+    display: none;
+    min-width: 100px;
+}
+
+.drop-down-child a{ /* Text modification */
+    text-align: justify;
+    color: blue;
+    background-color: aquamarine;
+    padding: 30px 30px;
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease;
+}
+
+
+.drop-down:hover .drop-down-child{ /* effect menu cascade "Hover" */
+    display: block; 
+    color: blue;
+    background-color: aquamarine;
+    transform: translateY(0);
+}
+.drop-down-child a:hover{ /* Effect sub menu Hover */
+    color: aquamarine;
+    background-color: blue;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    transition: 1s;
+
+    opacity: 1;
+    transform: translateY(0);
+}
+/* END NAV */
+
+
+
+
+
+/* MAIN */
+main{
+    grid-area: main;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Hcontainer{
+    color: white;
+
+    background-color: rgba(245, 245, 245, 0.453);
+    border-radius: 2px;
+    margin: 5% 5%;
+    padding: 5%;
+   
+    text-align: center;
+}
+
+.Container1 h1{
+    font-size: 40px;
+    text-shadow: -2px 0 #0600aa83, 0 2px #0600aa7d, 2px 0 #ffffff, 0 -2px #ffffff;
+    background-color: rgba(255, 255, 255, 0.474);
+    text-align: center;
+    margin: 0;
+}
+
+.Hcontainer h3{
+    padding: 5%;
+    font-size: 30px;
+    color: rgb(0, 0, 139);
+}
+.Hcontainer p{
+    margin: 5% 10%;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    text-shadow: -1px 0 rgb(33, 33, 255), 0 1px rgb(33, 33, 255), 1px 0 rgb(33, 33, 255), 0 -1px rgb(33, 33, 255);
+}
+
+.Hcontainer img{
+    max-width: 100%;
+
+}
+
+.Hcontainer .ul2{
+    padding: 0 40%;
+}
+
+div.paragrafCL{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2%;
+    gap: 15px;
+}
+
+div.paragraf1{
+    background-color: rgba(121, 182, 236, 0.338);
+    padding: 5px;
+    font-size: 30px;
+}
+
+div.paragraf2{
+    background-color: rgba(121, 182, 236, 0.338);
+    padding: 5px;
+    font-size: 30px;
+}
+
+div.listH{
+    margin: 5px 30%;
+}
+
+.listH li{
+    font-size: 80%;
+}
+
+/* END MAIN */
+
+
+/* ANIMATION EFFECT */
+
+/* SLIDE IMG */
+
+.containerAutomatic{
+    display: flex;
+    justify-content: center;
+    margin: 5% 2%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.containerAutomatic img{
+    width: 100%;
+    display: none;
+    width: 1200px;
+    max-height: 700px;
+    object-fit: cover;
+}
+
+
+div.containerS{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 2%;
+    text-align: center;
+    overflow: hidden;
+    height: fit-content;
+    border-radius: 15px;
+    border-color: none;
+}
+.containerS img{
+    width: 1100px;
+    max-height: 600px;
+    object-fit: cover;
+    display: none;
+    order: 2;
+    overflow: hidden;
+}
+
+
+.btnSlide1{
+    height: 100%;
+    cursor:pointer;
+    position: relative;
+    background-color: transparent;
+    font-size: 50px;
+    border: none;
+    color: whitesmoke;
+    
+}
+.btn1{
+    order: 1;
+}
+.btn2{
+    order: 3;
+}
+.btnSlide2{
+    height: 100%;
+    cursor:pointer;
+    position: relative;
+    background-color: transparent;
+    font-size: 50px;
+    border: none;
+    color: whitesmoke;
+   
+}
+
+.btnSlide1:hover{
+    color: rgba(0, 0, 255, 0.500);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.btnSlide2:hover{
+    color: rgba(255, 0, 0, 0.500);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* SLIDE img END */
+
+/* Fade img */
+/* .fadeimg {
+    visibility: hidden;
+  }
+  .fadeimg.fadein {
+    visibility: visible !important;
+    -webkit-animation: fade_in_anim 1.2s;
+    animation: fade_in_anim 1.2s;
+  }
+  @-moz-keyframes fade_in_anim {
+    0%{opacity:0}
+    100%{opacity:1}
+  }
+  @-webkit-keyframes fade_in_anim {
+    0%{opacity:0}
+    100%{opacity:1}
+  }
+  @keyframes fade_in_anim {
+    0%{opacity:0}
+    100%{opacity:1}
+  } */
+  /* ======================================== */
+
+
+/* FOOTER */
+
+.Fgrid{
+    grid-area: footer;
+    /* Grid pour le footer */
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: auto;
+    gap: 5px; /* Distance entre le 3 column */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.342);
+}
+
+.Fblason{       /* 1 COLUMN AVEC BLASON CANNES */
+    grid-column: 1;
+    background-color: none;
+    background-image: url("../img/logo-cannes-footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    
+}
+
+.Fcontact{      /* 2 COLUMN AVEC CONTACT CANNES */
+    grid-column: 2;
+    background-color: none;
+    color: rgb(1, 1, 171);
+    justify-self: center;
+    
+   
+}
+
+.Fsocial{ /* 3 COLUMN AVEC SOCIAL CANNES */
+    grid-column: 3;
+    justify-self: center;
+    color: rgb(1, 1, 171);
+}
+
+.Flink{
+    text-decoration: none;
+}
+.Flink img{
+    max-width: 50px;
+    padding: 5px;
+    display: table-column;
+}
+
+/* END FOOTER */
+}
