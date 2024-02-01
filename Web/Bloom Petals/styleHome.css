@@ -1,0 +1,242 @@
+
+body{
+    background-image: url(\images/wedding-1846114_1920.jpg);
+    background-attachment: fixed;
+}
+
+
+/*Formattation bar*/
+
+
+div#menuHome {
+width: 100%;
+float: left;
+display: grid;
+grid-template-columns: 50% 20% 30%;
+padding: 0;
+background-color: rgba(255, 255, 255, 0.5)
+}
+
+div#menuHome ul{
+    
+    color: rgb(255, 155, 172);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+div#menuHome ul li a:hover{
+    display: flex;
+    font-size: 120%;
+    margin: -18px;
+    width: 100%;
+    text-align: end;
+    padding: 15px;
+    color: white;
+    background: pink;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu{
+grid-column: 1;
+margin-left: 10%;
+}
+
+div#menuHome li{
+width: auto;
+float: left;
+margin: 0;
+padding: 20px;
+}
+
+div#menuHome a{
+margin: -15px;
+padding: 15px;
+text-decoration: none;
+color: pink;
+background-color: rgba(255, 255, 255, 0.074);
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: pink;
+}
+
+/*a la */
+
+
+
+/*input*/
+#s {
+    width: 100px;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75) inset;
+    }
+
+#s:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+#inputser{
+grid-column: 3;
+height: 20px;
+display: grid;
+cursor: pointer;
+border: 0;
+top: auto;
+right: 30px;
+width: 25px;
+}
+
+
+
+/*title*/
+.fontcustom{
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Great Vibes', cursive;
+   
+}
+/*Formttation text page*/
+.articl{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: italic;
+    font-family: 'IM Fell Great Primer SC', serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 80px;
+}
+
+.articl h3 {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+/*Photo Page home*/
+.photoblock{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.photoblock2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+
+img{
+    width: 200px;
+    height: 145px;
+}
+
+/*      GRID
+dl#services{
+    width: auto;
+    margin: -10%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 20% 80%;
+   margin-top: 15px;
+   padding-bottom: 25px;
+}
+
+.servicesC{
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.services1{
+    padding: 5px;
+    grid-column: 1;
+    grid-row: 2
+}
+
+.services2{
+    padding: 5px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.services3{
+    padding: 5px;
+    grid-column: 3;
+    grid-row: 2;
+}
+*/
+
+
+dl#services{
+/*     
+    margin: -10%;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-flow: row;
+    -webkit-flex-flow: row;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    margin-top: 10px; */
+   
+    margin-right: -5%;
+        margin-left: -5%;
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row nowrap;
+        -webkit-flex-flow: row nowrap;
+        align-items: stretch;
+        -webkit-align-items: stretch;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        margin-top: 10px;
+        padding: 25px;
+       
+        
+}
+.servicesC{
+    text-align: center;
+}
+
+.services1{
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+width: 30%;
+
+}
+
+.services2{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width: 30%;
+    
+}
+
+.services3{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width: 40%;
+  
+}
+

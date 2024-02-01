@@ -1,0 +1,162 @@
+
+body{
+    background-image: url(\images/wedding-1846114_1920.jpg);
+    background-attachment: fixed;
+}
+
+
+/*Formattation bar*/
+
+
+div#menuHome {
+width: 100%;
+float: left;
+display: grid;
+grid-template-columns: 50% 20% 30%;
+padding: 0;
+background-color: rgba(255, 255, 255, 0.5)
+}
+
+div#menuHome ul{
+    
+    color: rgb(255, 155, 172);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+div#menuHome ul li a:hover{
+    display: flex;
+    font-size: 120%;
+    margin: -18px;
+    width: 100%;
+    text-align: end;
+    padding: 15px;
+    color: white;
+    background: pink;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu{
+grid-column: 1;
+margin-left: 10%;
+}
+
+div#menuHome li{
+width: auto;
+float: left;
+margin: 0;
+padding: 20px;
+}
+
+div#menuHome a{
+margin: -15px;
+padding: 15px;
+text-decoration: none;
+color: pink;
+background-color: rgba(255, 255, 255, 0.074);
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: pink;
+}
+
+/*a la */
+
+
+
+/*input*/
+#s {
+    width: 100px;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75) inset;
+    }
+
+#s:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+#inputser{
+grid-column: 3;
+height: 20px;
+display: grid;
+cursor: pointer;
+border: 0;
+top: auto;
+right: 30px;
+width: 25px;
+}
+
+
+
+/*title*/
+.fontcustom{
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Great Vibes', cursive;
+   
+}
+/*Formttation text page*/
+.articl{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: italic;
+    font-family: 'IM Fell Great Primer SC', serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 80px;
+}
+
+.articl h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+/*Photo Page home*/
+img{
+    max-width: 150px;
+    border-radius: 50%;
+    border: 3px solid  pink;
+    margin: 5px;
+    padding: 2px;
+    column-gap: 0;
+}
+
+
+/*Structure Photoblock0*/
+
+/* .photoblock0{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    grid-auto-flow: row;
+   justify-items: stretch;
+   gap: 0px;
+} */
+/*Photoblock0*/
+
+.photoblock0{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1px;
+    align-content: stretch;
+    margin: 30px;
+}
+.photoblock0 img:hover{
+transform: scale(240%);
+transition: transform 0.3s;
+border-radius: 5px;
+box-shadow: 0px 0px 100px pink;
+border-color: white;
+}
+

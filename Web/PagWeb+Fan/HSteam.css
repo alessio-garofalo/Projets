@@ -1,0 +1,253 @@
+
+/* Top pag */
+html{
+    width: 100%;
+    margin: 0;
+}
+/* iMG */
+body{
+    background-image:URL("img/cybepunk.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+    /* Template page */
+    
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header "
+    "nav nav nav nav nav"
+    ". main main main ."
+    "footer footer footer footer footer ";
+    
+    justify-items: center;
+    
+}
+
+header{
+    grid-area: header;
+    width: 100%;
+    text-align: center; 
+    margin: 0;
+}
+/* bar nav */
+nav{
+    min-height: 30px;
+    max-height: 80px;
+    width: 100%;
+    color: whitesmoke;
+    background: #3f3f3fc5;
+    grid-area: nav;  
+
+
+}
+/* Barra nav */
+.lnav{ 
+  width: auto;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+
+    padding: 0;
+    margin: 0;
+}
+/* Formattation Text nav */
+nav >div >ul>div>li>a{
+  font-size: 30px;
+  float: left;
+  color: whitesmoke;
+  text-decoration: none;
+
+}
+
+nav>div>ul{
+    list-style: none;
+}
+
+/* Formattation background nav */
+nav >div >ul>div{
+    min-height: 30px;
+   
+    border-radius: 5px;
+    padding: 1% 4%;
+  min-width: max-content;
+   
+}
+
+/* Animation souris nav bar */
+nav>div>ul>div:hover{
+    background: #ffffff45;
+    animation-delay: 3s;
+    transition: 1s; 
+    animation-duration: 3s;
+    
+}
+
+nav>div>ul>div:not(:hover){
+    background: #3f3f3fa2;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    transition: 1s;
+    opacity: 0.8;
+}
+
+/* Nav text */
+.Hist, .Steam, .Software{
+    text-align: center;
+    text-align: justify;
+}
+.h-gradient{
+    height: 100%;
+    background: linear-gradient(to top, #2670D1 10%, #2368C2 20%, #1E59A6 30%, #174480 40%, #123666 59%, #102F59 70%, #0D274A 80%, #0A1F3B 100%);
+}
+
+
+
+@media all and (min-width: 108px) and (max-width: 478px) { 
+    header{
+    width: 100%;
+    margin: 0;
+    }
+    nav{
+        width: 100%;
+        margin: 0;
+    }
+    nav >div >ul>div {
+       
+        border-radius: 80px;
+        min-width: 140px;
+        max-width: 160px;
+}
+nav >div >ul>div {
+    border-radius: 80px;
+    padding: 1%;
+    min-width: 80px;
+    max-width: 150px;
+}
+nav >div >ul>div>li{
+    font-size: 25px;
+}
+
+}
+/* iMAGE MAIN */
+main>img{
+    width: auto;
+}
+
+.imgcyber{
+    height: 100%;
+    justify-content: center;
+    background-repeat: no-repeat;
+
+    opacity: 1;
+}
+
+
+/* MAIN */
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    background-color: #0a1f3ba7;
+    text-align: center;
+    margin: 10% 20%;
+    padding: 2% 4%;
+  }
+   
+main h1, h2{
+    color: #67c1f5;
+}
+
+main p{
+    color: #c6d4df;
+}
+
+main>img{
+    width: auto;
+}
+
+.imgcyber{
+    height: 100%;
+    justify-content: center;
+    background-repeat: no-repeat;
+    
+    opacity: 1;
+}
+
+/* END MAIN */
+
+/* FOOTER */
+
+.fcontainer{
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    background: #171a21;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(7, auto); 
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+    align-items: justify ;
+    padding-bottom: 1%;
+    
+}
+
+.fcontainer h3{
+    text-align: center;
+    grid-row: 1;
+    font-size: 24px;
+
+}
+
+.fcontainer > a{
+    text-align: center;
+  
+}
+.fcontainer img{
+    max-width: 25px;
+}
+
+.io{
+ 
+    grid-column: 2;
+}
+
+.steamS{
+    grid-column: 4;
+}
+
+
+.Osoftware{
+    grid-column: 6;
+}
+
+.io, .steamS, .Osoftware{
+   font-size: 25px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 25px;
+    
+}
+
+
+.Osoftware a, .steamS a, .io a{
+ text-decoration: none;
+ color: rgb(185, 185, 185);
+ font-size: 20px;
+}
+.Osoftware a:hover, .steamS a:hover, .io a:hover{
+    
+    animation-delay: 3s;
+    transition: 1s; 
+    animation-duration: 3s;
+    color: white;
+}
+
+/* eND fOOTER */

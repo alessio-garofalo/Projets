@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter</title>
+
+    <style>
+ html{
+            min-height: 99%;
+            
+        }
+
+        body{
+            
+            background: linear-gradient(to top, #2670D1 10%, #2368C2 20%, #1E59A6 30%, #174480 40%, #123666 59%, #102F59 70%, #0D274A 80%, #0A1F3B 100%);
+            /* background-image: url(Steam_icon.png);
+            background-size: auto 400px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-position-y: 90%;
+            background-position-x: 50%; */
+
+            align-content: center;
+            text-align: center;
+
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: 5% auto 40% auto ;
+        }
+
+
+       
+            .title{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                color: whitesmoke;
+                
+
+
+                text-align: center; 
+                font-size: 65px;
+           
+            }
+         
+
+            .title h1:hover{
+                /* background: rgb(50,142,255);
+                background: linear-gradient(0deg, rgba(50,142,255,1) 0%, rgba(2,3,8,1) 74%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                 -webkit-text-fill-color: transparent;
+                 -webkit-text-stroke: 1px whitesmoke;
+
+
+                 */
+                 
+                background: linear-gradient(to top, #2670D1 10%, #2368C2 20%, #1E59A6 30%, #174480 40%, #123666 59%, #102F59 70%, #0D274A 80%, #0A1F3B 100%);
+                background-clip: content-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+               
+                cursor: default;
+            }
+
+            
+
+            .CButton{
+                grid-column-start: 2;
+                grid-column-end: 3;
+
+                grid-row-start: 3;
+                grid-row-end: 3;
+
+                margin-left: 40%;
+                margin-right: 40%;
+                min-width: 150px;
+                max-height: 80px;
+                
+                color: whitesmoke;
+                text-align: center; 
+                border-radius: 5px;
+                transition: all .6s;
+                
+                background: rgb(51,52,88);
+                background: linear-gradient(180deg, rgba(51,52,88,1) 0%, rgba(105,108,108,1) 74%);  
+            }
+
+           
+                .CButton:hover{
+                    color: rgb(196, 196, 196);
+                    cursor: pointer;
+                    background: rgb(41, 42, 71);
+                    background: linear-gradient(180deg, rgb(40, 41, 71) 0%, rgb(77, 80, 80)74%);
+                }
+
+                .Steam_icon{
+                grid-column-start: 2;
+                grid-column-end: 3;
+
+                grid-row-start: 6;
+                grid-row-end: 6;
+                }
+
+                .Steam_icon1{
+                    max-width:  300px;
+                    max-height: 200px;
+                }
+    </style>
+
+
+<script type="text/javascript" language="javascript">
+    let myWindow;
+   
+    function openWin() {
+    MyWindow = window.open("Home.html", "newtab", "fullscreen=yes");
+
+    myWindow.close()
+    return;
+    }
+    
+
+
+</script>
+
+</head>
+
+<body>
+
+    <div class="title"><h1>Steam</h1></div>
+
+<div onclick="openWin()" class="CButton">
+
+    <h1>Enter</h1>
+
+</div>
+
+
+    <div class="Steam_icon">
+        <img  class="Steam_icon1" src="img/Steam_icon.png" alt="Steam_icon">
+    </div>
+</body>
+
+</html>
